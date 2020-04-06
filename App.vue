@@ -135,6 +135,9 @@ margin-top: 40upx;
 						/* #ifdef MP-WEIXIN */
 						@include relative(-53upx,0,0,calc(220upx - 50upx));
 						/* #endif */
+						/* #ifdef APP-PLUS */
+						@include relative(-65upx,0,0,calc(220upx - 50upx));
+						/* #endif */
 						z-index: 10;
 						text{
 							display: inline-block;

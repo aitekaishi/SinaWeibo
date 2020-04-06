@@ -1,6 +1,6 @@
 {
     "name" : "新浪微博",
-    "appid" : "__UNI__551ACF5",
+    "appid" : "__UNI__4A077FF",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -55,13 +55,13 @@
             },
             "icons" : {
                 "android" : {
-                    "xxxhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
-                    "xxhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
-                    "xhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
-                    "hdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png"
+                    "xxxhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406205846.png",
+                    "xxhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406205846.png",
+                    "xhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406205846.png",
+                    "hdpi" : "C:/Users/Simple/Desktop/QQ截图20200406205846.png"
                 },
                 "ios" : {
-                    "appstore" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
+                    "appstore" : "C:/Users/Simple/Desktop/QQ截图20200406205846.png",
                     "ipad" : {
                         "app" : "unpackage/res/icons/76x76.png",
                         "app@2x" : "unpackage/res/icons/152x152.png",

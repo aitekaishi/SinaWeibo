@@ -4,7 +4,7 @@
 			<image @click="$common.navigateBack()" src="/static/index/back.svg" mode="w/idthFix"></image>
 			<view class="input">
 				<image src="/static/index/serach.svg" mode="widthFix"></image>
-				<input type="text" v-model="keyWord" @keyup="$common.navigateTo('../serach/serach')" :placeholder="serachObj.hotwords[0].tip + serachObj.hotwords[0].word" />
+				<input type="text" v-model="keyWord" @keyup="$common.navigateTo('../serach/serach')" :placeholder="placeholder" />
 			</view>
 			<view @click="serach(keyWord)">搜索</view>
 		</view>
@@ -20,7 +20,7 @@
 		</view>
 		<view class="cate-list">
 			<view class="item" :class="[(index+1)%6 == 0 ? 'border-right' : '']" v-for="(item, index) in serachObj.cards[1].card_group[0].group" :key="index">
-				<image :src="item.pic" mode="widthFix"></image>
+				<image @click="toLink(item.scheme)" :src="item.pic" mode="widthFix"></image>
 				<view>{{ item.title_sub }}</view>
 			</view>
 			<view class="item border-right" :class="[(index+1) == 7-((serachObj.cards[1].card_group[0].group.length)%6) ? 'none' : '']" v-for="(item, index) in 7-((serachObj.cards[1].card_group[0].group.length)%6)" :key="index">
@@ -37,6 +37,7 @@ export default {
 	data() {
 		return {
 			keyWord:'',
+			placeholder:'',
 			serachObj: {} //数据
 		};
 	},
@@ -47,15 +48,20 @@ export default {
 		let that = this;
 		buziAPI.getSerachIndex(res => {
 			that.serachObj = res.data;
+			that.placeholder = that.serachObj.hotwords[0].tip + that.serachObj.hotwords[0].word
 		});
 	},
 	//上拉加载更多
 	onReachBottom() {},
 	methods: {
 		serach(val){
-			console.log(val)
 			uni.navigateTo({
-				url:'../webView/webView?name=' + val
+				url:'../webView/webView?name=' + val+'&type=search'
+			})
+		},
+		toLink(item){
+			uni.navigateTo({
+				url:'../webView/webView?name=' + item+'&type=video'
 			})
 		}
 	}

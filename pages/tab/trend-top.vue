@@ -44,7 +44,7 @@
 						</view>
 					</view>
 					<view v-if="item.page_info" class="video">
-						<view v-if="item.page_info.media_info">
+						<view @click="playVideo(item.page_info.page_url)" v-if="item.page_info.media_info">
 							<image class="image" :src="item.page_info.page_pic.url" mode="aspectFill"></image>
 							<view class="title">
 								<view>{{item.page_info.play_count}}</view>

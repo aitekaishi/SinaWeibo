@@ -40,6 +40,12 @@ export default {
 			uni.navigateTo({
 				url:'../detail/detail?type='+type
 			})
+		},
+		//播放视频
+		playVideo(item){
+			uni.navigateTo({
+				url:'../webView/webView?name=' + item+'&type=video'
+			})
 		}
 		
 	}
