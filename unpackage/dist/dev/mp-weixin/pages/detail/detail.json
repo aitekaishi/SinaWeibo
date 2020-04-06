@@ -1,0 +1,13 @@
+{
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "multiple": "/pages/tab/multiple",
+    "trend-top": "/pages/tab/trend-top",
+    "s-tabs": "/components/s-tabs/index",
+    "s-tab": "/components/s-tab/index",
+    "comment": "/pages/detail-tab/comment",
+    "repost": "/pages/detail-tab/repost",
+    "attitudes": "/pages/detail-tab/attitudes"
+  }
+}

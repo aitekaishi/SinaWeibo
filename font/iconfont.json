@@ -1,0 +1,37 @@
+{
+  "id": "1729740",
+  "name": "微博",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6216058",
+      "name": "编写",
+      "font_class": "bianxie",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "6216061",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "6216067",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "6216080",
+      "name": "转发",
+      "font_class": "zhuanfa",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    }
+  ]
+}

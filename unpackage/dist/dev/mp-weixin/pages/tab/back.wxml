@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" class="back data-v-48642732" bindtap="__e"><view class="view data-v-48642732"><image src="/static/index/back.svg" mode="widthFix" class="data-v-48642732"></image></view><view class="spance data-v-48642732"></view></view>
