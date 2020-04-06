@@ -1,5 +1,5 @@
 {
-    "name" : "douyu",
+    "name" : "新浪微博",
     "appid" : "__UNI__551ACF5",
     "description" : "",
     "versionName" : "1.0.0",
@@ -55,13 +55,13 @@
             },
             "icons" : {
                 "android" : {
-                    "xxxhdpi" : "unpackage/res/icons/192x192.png",
-                    "xxhdpi" : "unpackage/res/icons/144x144.png",
-                    "xhdpi" : "unpackage/res/icons/96x96.png",
-                    "hdpi" : "unpackage/res/icons/72x72.png"
+                    "xxxhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
+                    "xxhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
+                    "xhdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
+                    "hdpi" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png"
                 },
                 "ios" : {
-                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "appstore" : "C:/Users/Simple/Desktop/QQ截图20200406170833.png",
                     "ipad" : {
                         "app" : "unpackage/res/icons/76x76.png",
                         "app@2x" : "unpackage/res/icons/152x152.png",
@@ -115,22 +115,22 @@
                         "^/api" : ""
                     }
                 },
-				"/sinaimg" : {
-				    "target" : "https://wx4.sinaimg.cn/",
-				    "changeOrigin" : true,
-				    "secure" : false,
-				    "pathRewrite" : {
-				        "^/sinaimg" : ""
-				    }
-				},
-				"/login" : {
-				    "target" : "https://passport.weibo.cn/",
-				    "changeOrigin" : true,
-				    "secure" : false,
-				    "pathRewrite" : {
-				        "^/login" : ""
-				    }
-				}
+                "/sinaimg" : {
+                    "target" : "https://wx4.sinaimg.cn/",
+                    "changeOrigin" : true,
+                    "secure" : false,
+                    "pathRewrite" : {
+                        "^/sinaimg" : ""
+                    }
+                },
+                "/login" : {
+                    "target" : "https://passport.weibo.cn/",
+                    "changeOrigin" : true,
+                    "secure" : false,
+                    "pathRewrite" : {
+                        "^/login" : ""
+                    }
+                }
             }
         }
     },
