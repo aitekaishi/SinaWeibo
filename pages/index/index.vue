@@ -124,6 +124,11 @@ export default {
 			buziAPI.getIndex({ containerid: 102803, openApp: '0', since_id: this.pageIndex - 1 }, res => {
 				that.indexList = [...that.indexList, ...res.data.cards];
 				for (let i = (page - 1) * 10; i < that.indexList.length; i++) {
+					if(that.indexList[i].mblog.pics!=undefined){
+						for (let j = 0; j < that.indexList[i].mblog.pics.length; j++) {
+							that.$common.placeholderChart(that.indexList[i].mblog.pics[j],'url')
+						}
+					}
 					if (
 						that.indexList[i].mblog &&
 						that.indexList[i].mblog.page_info &&

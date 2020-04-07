@@ -206,9 +206,9 @@ var _myMixins = _interopRequireDefault(__webpack_require__(/*! @/mixins/myMixins
 //
 //
 //
-var _default = { data: function data() {return { keyWord: '', serachObj: {} //数据
-    };}, components: {}, watch: {}, mixins: [_myMixins.default], onLoad: function onLoad() {var that = this;_api.buziAPI.getSerachIndex(function (res) {that.serachObj = res.data;});}, //上拉加载更多
-  onReachBottom: function onReachBottom() {}, methods: { serach: function serach(val) {console.log(val);uni.navigateTo({ url: '../webView/webView?name=' + val });} } };exports.default = _default;
+var _default = { data: function data() {return { keyWord: '', placeholder: '', serachObj: {} //数据
+    };}, components: {}, watch: {}, mixins: [_myMixins.default], onLoad: function onLoad() {var that = this;_api.buziAPI.getSerachIndex(function (res) {that.serachObj = res.data;that.placeholder = that.serachObj.hotwords[0].tip + that.serachObj.hotwords[0].word;});}, //上拉加载更多
+  onReachBottom: function onReachBottom() {}, methods: { serach: function serach(val) {uni.navigateTo({ url: '../webView/webView?name=' + val + '&type=search' });}, toLink: function toLink(item) {uni.navigateTo({ url: '../webView/webView?name=' + item + '&type=video' });} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

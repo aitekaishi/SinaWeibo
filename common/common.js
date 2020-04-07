@@ -58,5 +58,32 @@ export default {
 				objList[i][data] = moment(new Date(objList[i][data])).format("YYYY-MM-DD:HH:mm")
 			}
 		}
+	},
+	//占位图
+	placeholderChart(obj,imgSrc) {
+		let url = obj[imgSrc]
+		let src = obj[imgSrc];
+		// #ifdef H5
+		if(obj[imgSrc].indexOf('//wx1')>-1){
+			src = obj[imgSrc].replace('https://wx1.sinaimg.cn/', '/wx1/')
+		}
+		if(obj[imgSrc].indexOf('//wx2')>-1){
+			src = obj[imgSrc].replace('https://wx2.sinaimg.cn/', '/wx3/')
+		}
+		if(obj[imgSrc].indexOf('//wx3')>-1){
+			src = obj[imgSrc].replace('https://wx3.sinaimg.cn/', '/wx3/')
+		}
+		if(obj[imgSrc].indexOf('//wx4')>-1){
+			src = obj[imgSrc].replace('https://wx4.sinaimg.cn/', '/wx4/')
+		}
+		// #endif
+		obj[imgSrc] = '/static/sina-background.jpg';
+		uni.request({
+			url: src,
+			responseType: 'arraybuffer',
+			success: res => {
+				obj[imgSrc] = url
+			}
+		});
 	}
 }

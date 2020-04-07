@@ -8538,7 +8538,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__551ACF5" };exports.default = _default;
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__4A077FF" };exports.default = _default;
 
 /***/ }),
 /* 9 */,
@@ -14616,6 +14616,12 @@ var _default = {
       this.$localstorageFactory.set('detail', item);
       uni.navigateTo({
         url: '../detail/detail?type=' + type });
+
+    },
+    //播放视频
+    playVideo: function playVideo(item) {
+      uni.navigateTo({
+        url: '../webView/webView?name=' + item + '&type=video' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
